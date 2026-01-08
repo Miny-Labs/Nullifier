@@ -49,6 +49,13 @@ NULLIFIER uses **zero-knowledge proofs** to verify accreditation from live bank 
 - Next.js 14 (App Router) + TypeScript
 - wagmi v2 + viem for Web3
 - shadcn/ui + Tailwind CSS
+- Modern landing page with:
+  - Gradient announcement banner
+  - Mega menu navigation with feature previews
+  - Mesh gradient hero backgrounds
+  - Playfair Display serif typography
+  - Interactive product mockups
+  - Logo cloud with trust signals
 
 ## 🚀 Quick Start
 
