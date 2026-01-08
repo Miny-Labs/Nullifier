@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+contracts/out/
+contracts/cache/
+frontend/.next/
+frontend/out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+contracts/.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+lcov.info
+
+# Foundry
+contracts/broadcast/
+contracts/cache_forge/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# Plaid/Reclaim secrets
+**/secrets/
+*.secret
+
+# Session logs
+.claude/session-log.txt
