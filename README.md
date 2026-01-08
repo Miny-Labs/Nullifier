@@ -63,7 +63,7 @@ NULLIFIER uses **zero-knowledge proofs** to verify accreditation from live bank 
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/nullifier.git
+git clone https://github.com/Miny-Labs/Nullifier.git
 cd nullifier
 
 # Install dependencies
@@ -128,7 +128,7 @@ forge script script/Deploy.s.sol:DeployScript \
 | Layer | Technology |
 |-------|------------|
 | Chain | Mantle Sepolia (Chain ID: 5003) |
-| Contracts | Solidity 0.8.20, Foundry, OpenZeppelin |
+| Contracts | Solidity 0.8.24, Foundry, OpenZeppelin v5 |
 | ZK Proofs | Reclaim Protocol (zkTLS) |
 | Bank Data | Plaid (Sandbox) |
 | Frontend | Next.js 14, TypeScript, wagmi v2 |
@@ -139,6 +139,7 @@ forge script script/Deploy.s.sol:DeployScript \
 ```
 nullifier/
 ├── CLAUDE.md              # AI assistant context
+├── .claude/               # Claude Code skills
 ├── contracts/             # Smart contracts (Foundry)
 │   ├── src/
 │   │   ├── NullifierRegistry.sol

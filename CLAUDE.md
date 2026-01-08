@@ -13,7 +13,7 @@ Privacy-preserving accredited investor verification for Mantle's RWA ecosystem.
 
 ### Smart Contracts
 - **Framework**: Foundry (forge, anvil, cast)
-- **Language**: Solidity 0.8.20+
+- **Language**: Solidity 0.8.24
 - **Libraries**: OpenZeppelin Contracts v5 (ERC-721, ERC-4626, AccessControl)
 - **Verification**: Reclaim Protocol on-chain verifier
 
@@ -56,6 +56,15 @@ pnpm dev                       # Start frontend
 ```
 nullifier/
 ├── CLAUDE.md                 # This file
+├── .claude/                  # Claude Code skills & settings
+│   ├── settings.json
+│   └── skills/
+│       ├── frontend-patterns.md
+│       ├── scaffold.md
+│       ├── code-reviewer.md
+│       ├── deploy.md
+│       ├── test.md
+│       └── demo.md
 ├── contracts/                # Foundry smart contracts
 │   ├── src/
 │   │   ├── NullifierRegistry.sol    # Soulbound credential NFT
@@ -105,7 +114,7 @@ nullifier/
 - Custom errors over require strings: `error NotAccredited();`
 - Events for all state changes
 - CEI pattern (Checks-Effects-Interactions)
-- No floating pragmas: use `pragma solidity 0.8.20;`
+- No floating pragmas: use `pragma solidity 0.8.24;`
 
 ### TypeScript
 - Strict mode enabled
@@ -203,6 +212,7 @@ const CONTRACTS = {
 - ❌ Don't use floating pragma versions
 - ❌ Don't skip loading states in UI
 - ❌ Don't hardcode private keys anywhere
+- ❌ **ABSOLUTELY NO MOCK DATA** - Use real integrations only
 
 ## Resources
 
